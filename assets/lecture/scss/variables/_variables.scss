@@ -1,0 +1,28 @@
+//path
+$fonturl     : '../fonts';
+$imageurl    : '../images';
+
+//fonts
+$font-reg    : 'Barlow-Regular';
+$font-semi   : 'Barlow-SemiBold';
+$font-md     : 'Barlow-Medium';   
+
+
+//variables
+$red       : #EC4646;
+$green     : #37B36F;
+$yellow    : #F6A623;  
+$grey      : #DFDFDF;
+$dark-grey : #9E9E9E; 
+$blue      : #46A4EC;
+$black     : #262626;
+$white     : #ffffff;
+
+
+
+//Fonts Family
+@include font-face($font-semi  , '#{$fonturl}/Barlow-SemiBold', 'normal', 'normal'); 
+@include font-face($font-md  , '#{$fonturl}/Barlow-Medium', 'normal', 'normal'); 
+@include font-face($font-reg  , '#{$fonturl}/Barlow-Regular', 'normal', 'normal'); 
+
+

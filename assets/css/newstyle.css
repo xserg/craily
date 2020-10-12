@@ -1,0 +1,2017 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,900&display=swap");
+
+#frmSignup {
+    background-color: #ffffff;
+    margin: 100px auto;
+    /* font-family: Raleway; */
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    /* font-family: Raleway; */
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+textarea.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    /* font-family: Raleway; */
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    /* margin: 0 2px; */
+    background-color: #bbbbbb;
+    border: none;
+    font-size: 14px;
+    color: white;
+    padding: 2px 5px;
+    background: #2bb5fe;
+    /* border-radius: 50%; */
+    display: inline-block;
+    opacity: 0.5;
+    margin-bottom: 5px;
+}
+.tutor-step-form {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #4caf50;
+}
+.register_page header.logonHeader .logo {
+    width: 100%;
+    margin-top: 37px;
+    float: left;
+}
+#frmSignup {
+}
+/*.register_page #logOn {*/
+/*background: url(/uploads/images/signup.jpg) !important;*/
+/*!* background: url(https://crainly.com/assets/images/blackboard-with-math-bg.jpg) !important; *!*/
+/*!* padding-top: 150px; *!*/
+/*}*/
+/*.register_page #logOn:before{*/
+/*display: none;*/
+/*}*/
+/*.register_page .ouTer {*/
+/*display: block !important;*/
+/*margin: 0 auto !important;*/
+/*max-width: 456px;*/
+/*}*/
+/*.register_page .logBlk {*/
+/*width: 100% !important;*/
+/*max-width: 100% !important;*/
+/*-webkit-box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);*/
+/*box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);*/
+/*border-radius:4px;*/
+
+/*background:white;*/
+/*}*/
+/*.register_page .logBlk form {*/
+/*position: relative;*/
+/*background: #fff;*/
+/*padding:55px 35px 30px 35px !important;*/
+/*width: 100% !important;*/
+/*margin: 0px !important;*/
+/*}*/
+/*.register_page .logBlk form h2 {*/
+/*font-size: 30px;*/
+/*font-weight: bold;*/
+/*color: #123666;*/
+/*margin:auto;*/
+/*margin-bottom: 25px;*/
+/*font-family: 'Montserrat', sans-serif;*/
+/*width:220px;*/
+/*}*/
+/*.register_page .logBlk form input {*/
+/*box-shadow: none;*/
+/*border: 1px solid #123666;*/
+/*border-radius: 0px;*/
+/*}*/
+/*.register_page .logBlk form label{*/
+/*font-size: 14px !important;*/
+/*color: #123666;*/
+/*font-weight: 400;*/
+/*font-family: 'Montserrat', sans-serif;*/
+/*}*/
+/*.register_page .logBlk .webBtn {*/
+/*width: 100%;*/
+/*border-radius: 100px;*/
+/*padding: 20px 0px !important;*/
+/*height: auto !important;*/
+/*font-size: 14px;*/
+/*text-transform: uppercase;*/
+/*font-weight: bold !important;*/
+/*background: 0px 0px 3px 0px #2cb1ff !important;*/
+/*box-shadow: 0px 0px 3px 0px #2cb1ff !important;*/
+/*font-family: 'Montserrat', sans-serif;*/
+/*}*/
+
+/*.register_page .haveAccount.text-center {*/
+/*display: flex;*/
+/*align-items: center;*/
+/*justify-content: space-evenly;*/
+/*margin-top: 5px;*/
+/*white-space: nowrap;*/
+/*padding:0 5px 20px 5px*/
+/*}*/
+/*.register_page .haveAccount.text-center span {*/
+/*font-size: 16px;*/
+/*color: #2cb1ff;*/
+/*font-weight: 400;*/
+/*font-family: 'Montserrat', sans-serif;*/
+/*}*/
+/*.register_page .haveAccount.text-center a {*/
+/*font-size: 14px;*/
+/*color: #2cb1ff !important;*/
+/*font-weight: 700 !important;*/
+/*border: 3px solid #2cb1ff;*/
+/*padding: 7px 20px;*/
+/*font-family: 'Montserrat', sans-serif;*/
+/*text-transform: uppercase;*/
+/*}*/
+/*.register_page .haveAccount.text-center a:hover {*/
+/*font-size: 14px;*/
+/*color: #fff !important;*/
+/*font-weight: 700 !important;*/
+/*!* border: 3px solid #fff; *!*/
+/*padding: 7px 20px;*/
+/*font-family: 'Montserrat', sans-serif;*/
+/*text-transform: uppercase;*/
+/*background:#2cb1ff;*/
+/*}*/
+/*.register_page .rememberMe {*/
+/*margin-top: 20px !important;*/
+/*text-align: left;*/
+/*margin-bottom: 0px !important;*/
+/*}*/
+
+.register_page .ouTer {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.register_page .logBlk {
+    max-width: 100%;
+    /* float: right;*/
+    width: 37%;
+}
+.register_page .PlusClass {
+    max-width: inherit;
+}
+.register_page .logBlk form#frmSignup {
+    width: 100%;
+    margin: 0px;
+}
+.register_page div#accordionExample .card {
+    margin-bottom: 10px;
+}
+.register_page .card-body label.checkbox-inline {
+    width: 22%;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    padding-left: 40px;
+    vertical-align: top;
+}
+.register_page .card-body label.checkbox-inline input {
+    margin-left: -30px;
+}
+.register_page .card-body label.checkbox-inline inout {
+    margin-left: -28px !important;
+}
+.register_page #logOn {
+    background: url(https://crainly.com/uploads/images/signup.jpg) !important;
+    /*background: url(/uploads/images/signup.jpg) !important;*/
+    /*background: url(https://crainly.com/assets/images/mia-new.jpg) !important;*/
+    padding-top: 150px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center right !important;
+}
+.register_page #logOn:before {
+    background: rgba(16, 43, 53, 0.26) !important;
+}
+.register_page header.logonHeader .logo {
+    width: 100%;
+    margin-top: 37px;
+    float: left;
+}
+
+.register_page .logBlk form input {
+    box-shadow: none;
+    border: 1px solid #123666;
+    border-radius: 0px;
+    margin-top: 0px;
+    border-radius: 3px !important;
+}
+
+.register_page p {
+    margin-bottom: 0 !important;
+}
+.register_page .logBlk form label {
+    font-size: 14px !important;
+    color: #123666;
+    font-weight: 400;
+    /*	font-family: 'Montserrat', sans-serif;*/
+}
+
+.register_page .logBlk .webBtn {
+    width: auto;
+    border-radius: 100px;
+    padding: 15px 80px !important;
+    height: auto !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    background: #008cd2 !important;
+    box-shadow: 0px 0px 3px 0px #008cd2;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 15px;
+}
+.register_page .logBlk form h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #123666;
+    margin-bottom: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.register_page #logOn .ouTer .lSide h1 {
+    color: #fff;
+    font-size: 33px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.register_page #logOn .ouTer .lSide p {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+.register_page #logOn .ouTer .lSide h3 {
+    color: #fff;
+}
+.register_page #logOn .ouTer .lSide h1:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    /* background:#F5610B; */
+    bottom: 0;
+}
+.register_page .lSide.ckEditor {
+    float: left;
+    width: 47% !important;
+    max-width: 100% !important;
+}
+.register_page #logOn .ouTer .logBlk form#frmSignup {
+    position: relative;
+    background: #fff;
+    padding: 27px !important;
+    padding-top: 35px !important;
+    width: 100% !important;
+    margin: 0px !important;
+}
+
+.register_page .logBlk form .bTn.text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register_page .logBlk button#prevBtn {
+    margin-right: 15px;
+}
+.register_page #logOn .ouTer .logBlk form#frmSignup + .haveAccount.text-center {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+}
+.register_page #logOn .ouTer .logBlk form#frmSignup + .haveAccount.text-center span {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+.register_page .haveAccount.text-center a {
+    font-size: 14px;
+    color: #2cb1ff !important;
+    font-weight: 700 !important;
+    border: 3px solid #2cb1ff;
+    padding: 7px 20px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+body.register_page form#frmLogin .haveAccount span {
+    color: #4e566d;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    padding-right: 1px;
+}
+.register_page .haveAccount.text-center a:hover {
+    font-size: 14px;
+    color: #2cb1ff !important;
+    font-weight: 700 !important;
+    border: 3px solid #2cb1ff;
+    padding: 7px 20px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+.register_page .card-body {
+    background: #eee;
+    padding: 20px;
+    box-shadow: 0px 0px 7px 0px #00000040;
+}
+
+.register_page .rememberMe .lblBtn,
+.register_tutor_page .rememberMe .lblBtn {
+    text-align: center !important;
+}
+.register_page .rememberMe .lblBtn label,
+.register_tutor_page .rememberMe .lblBtn label {
+    color: #123666;
+    font-size: 12px !important;
+    font-family: "Montserrat", sans-serif !important;
+}
+.register_page .rememberMe .lblBtn label a,
+.register_tutor_page .rememberMe .lblBtn label a {
+    color: #123666;
+    font-size: 12px !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: bold !important;
+}
+
+.register_tutor_page .ouTer {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.register_tutor_page .logBlk {
+    max-width: 100%;
+    /* float: right;*/
+    width: 37%;
+}
+.register_tutor_page .PlusClass {
+    max-width: inherit;
+}
+.register_tutor_page .logBlk form#frmSignup {
+    width: 100%;
+    margin: 0px;
+}
+.register_tutor_page div#accordionExample .card {
+    margin-bottom: 10px;
+}
+.register_tutor_page .card-body label.checkbox-inline {
+    width: 22%;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    padding-left: 40px;
+    vertical-align: top;
+}
+.register_tutor_page .card-body label.checkbox-inline input {
+    margin-left: -30px;
+}
+.register_tutor_page .card-body label.checkbox-inline inout {
+    margin-left: -28px !important;
+}
+.register_tutor_page #logOn {
+    background: url(https://crainly.com/assets/images/mia-new.jpg) !important;
+    padding-top: 150px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center right !important;
+}
+.register_tutor_page #logOn:before {
+    background: rgba(16, 43, 53, 0.26) !important;
+}
+.register_tutor_page header.logonHeader .logo {
+    width: 100%;
+    margin-top: 37px;
+    float: left;
+}
+
+.register_tutor_page .logBlk form input {
+    box-shadow: none;
+    border: 1px solid #123666;
+    border-radius: 0px;
+    margin-top: 0px;
+    border-radius: 3px !important;
+}
+
+.register_tutor_page p {
+    /* margin-bottom: 0 !important; */
+}
+.register_tutor_page .logBlk form label {
+    font-size: 14px !important;
+    color: #123666;
+    font-weight: 400;
+    /*	font-family: 'Montserrat', sans-serif;*/
+}
+
+.register_tutor_page .logBlk .webBtn {
+    width: auto;
+    border-radius: 100px;
+    padding: 15px 80px !important;
+    height: auto !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    background: #008cd2 !important;
+    box-shadow: 0px 0px 3px 0px #008cd2;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 15px;
+}
+.register_tutor_page .logBlk form h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #123666;
+    margin-bottom: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.register_tutor_page #logOn .ouTer .lSide h1 {
+    color: #fff;
+    font-size: 33px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.register_tutor_page #logOn .ouTer .lSide p {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+.register_tutor_page #logOn .ouTer .lSide h3 {
+    color: #fff;
+}
+.register_tutor_page #logOn .ouTer .lSide h1:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    /* background:#F5610B; */
+    bottom: 0;
+}
+.register_tutor_page .lSide.ckEditor {
+    float: left;
+    width: 47% !important;
+    max-width: 100% !important;
+}
+.register_tutor_page #logOn .ouTer .logBlk form#frmSignup_tutor {
+    position: relative;
+    background: #fff;
+    padding: 27px !important;
+    padding-top: 35px !important;
+    width: 100% !important;
+    margin: 0px !important;
+}
+
+.register_tutor_page .logBlk form .bTn.text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register_tutor_page .logBlk button#prevBtn {
+    margin-right: 15px;
+}
+.register_tutor_page #logOn .ouTer .logBlk form#frmSignup_tutor + .haveAccount.text-center {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+}
+.register_tutor_page #logOn .ouTer .logBlk form#frmSignup_tutor + .haveAccount.text-center span {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+.register_tutor_page .haveAccount.text-center a {
+    font-size: 15px;
+    letter-spacing: 0.2px;
+}
+body.register_tutor_page form#frmLogin .haveAccount span {
+    color: #4e566d;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    padding-right: 1px;
+}
+.register_tutor_page .haveAccount.text-center a:hover {
+    font-size: 14px;
+    color: #2cb1ff !important;
+    font-weight: 700 !important;
+    border: 3px solid #2cb1ff;
+    padding: 7px 20px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+.register_tutor_page .card-body {
+    /* background: #eee;
+    padding: 20px;
+    box-shadow: 0px 0px 7px 0px #00000040; */
+}
+
+.lblBtn label {
+    padding-left: 0px;
+}
+
+.login-popup .logBlk._inner form#frmLogin input {
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.crainly-section {
+    float: left;
+    width: 100%;
+    padding: 50px 0px;
+    background: #ffffff;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1420px;
+    padding: 0px 15px;
+}
+.crainly-section-title {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.crainly-section-title h3 {
+    font-size: 35px;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+}
+.crainly-section-content {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.crainly-section-content-inner {
+    width: 33%;
+    padding-right: 15px;
+}
+.crainly-section-content-inner:last-child {
+    padding-right: 0px;
+}
+.crainly-section-content-inner-img {
+    text-align: center;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+.crainly-section-content-inner-img img {
+    /* width: 100px; */
+    display: inline-block;
+    object-fit: contain;
+}
+.crainly-section-content-inner-img-cls {
+    display: inline-block;
+    /* padding: 15px;
+    background: #E8EBF0; */
+    border-radius: 100px;
+    width: 160px;
+    height: 160px;
+    justify-content: center;
+    vertical-align: middle;
+    line-height: 118px;
+}
+.crainly-section-content-inner-cnt {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.crainly-section-content-inner-cnt h2:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    /* background: #F5610B; */
+    width: 30%;
+    height: 3px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.crainly-section-content-inner-cnt h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #123666;
+    margin: 0 auto;
+    max-width: 68%;
+    line-height: 28px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    padding-bottom: 14px;
+}
+.crainly-section-content-inner-cnt p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #123666;
+    font-family: "Montserrat", sans-serif;
+}
+
+.crainly-request-section {
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding: 50px 0px;
+}
+.crainly-request-section-inner {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.crainly-request-section-inner .crainly-request-section-row {
+    width: 33%;
+    text-align: center;
+}
+.crainly-request-section-inner .crainly-request-section-row img {
+    display: inline-block;
+    width: 220px;
+}
+
+.crainly-request-section-row-right {
+    text-align: right;
+}
+.crainly-request-section-row-right ul {
+    margin-bottom: 15px;
+}
+.crainly-request-section-row-right ul li {
+    margin-right: 8px;
+}
+.crainly-request-section-row-right ul li a i {
+    background: #123666;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 4px;
+}
+/*.crainly-request-section-row-right ul li:first-child a i{
+  line-height: 58px;
+} */
+.register_page form#frmLogin .haveAccount.text-center {
+    display: block;
+}
+.register_page form#frmLogin .haveAccount.text-center a {
+    font-size: 15px;
+    text-transform: inherit;
+    letter-spacing: 0.2px;
+    font-family: inherit;
+}
+form#frmLogin .bTn.text-center button.webBtn.colorBtn.lgBtn {
+    -webkit-box-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1), 0 2px 5px 0 rgba(43, 45, 80, 0.08),
+        0 1px 1.5px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 0 0 0 transparent;
+    box-shadow: 0 0 0 1px rgba(43, 45, 80, 0.1), 0 2px 5px 0 rgba(43, 45, 80, 0.08), 0 1px 1.5px 0 rgba(0, 0, 0, 0.07),
+        0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 0 0 0 transparent;
+}
+.register_page form#frmLogin .haveAccount.text-center span {
+    color: #4e566d;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    padding-right: 1px;
+    font-family: unset;
+}
+.register_tutor_page #logOn .ouTer .logBlk form#frmSignup_tutor + .haveAccount.text-center a {
+    font-size: 14px;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    border: 3px solid #eaeaea;
+    padding: 7px 20px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+.register_tutor_page #logOn .ouTer .logBlk form#frmSignup_tutor + .haveAccount.text-center a:hover {
+    border-color: #40acf1;
+    color: #40acf1 !important;
+}
+.register_page form#frmLogin label {
+    font-family: "semi";
+}
+.register_page form#frmLogin h2,
+.register_tutor_page form#frmLogin h2 {
+    font-family: "semi";
+    margin: 15px 0 20px;
+}
+.crainly-request-section-row-right a {
+    display: block;
+    color: #123666;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+.crainly-request-section-row-middle {
+    text-align: center;
+}
+.crainly-request-section-row-middle p {
+    font-size: 22px;
+    font-weight: 400;
+    color: #123666;
+    font-family: "Montserrat", sans-serif;
+}
+.crainly-request-section-row-middle a {
+    border: 3px solid #123666;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+.footer {
+    float: left;
+    width: 100%;
+    background: #e8ebf0;
+    padding-top: 80px;
+}
+.footer-top {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top .footer-top-inner {
+    padding-right: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+.footer-top .footer-top-inner img {
+    width: 100px;
+}
+.footer-top .footer-top-inner span {
+    color: #123666;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    position: relative;
+    font-family: "Montserrat", sans-serif !important;
+    margin-top: 15px;
+}
+.footer-top .footer-top-inner span:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background: #f5610b;
+}
+.footer-top .footer-top-inner p {
+    font-size: 15px;
+    color: #123666;
+    font-family: "Montserrat", sans-serif !important;
+}
+.footer-top .footer-top-inner h3 {
+    color: #123666;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    font-family: "Montserrat", sans-serif !important;
+}
+.footer-top .footer-top-inner h3:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    /* background:#F5610B; */
+}
+.footer-top .footer-top-inner ul li {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.footer-top .footer-top-inner ul li:last-child {
+    margin-bottom: 10px;
+}
+.footer-top .footer-top-inner ul li a {
+    color: #123666;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif !important;
+}
+.footer-top .footer-top-inner ul.footer_subject li {
+    width: 45%;
+    display: inline-block;
+    padding: 8px;
+    border: 3px solid rgba(18, 54, 102, 0.15);
+    margin-right: 10px;
+    text-align: center;
+}
+.footer-bottom {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(18, 54, 102, 0.15);
+}
+.footer-bottom p {
+    text-align: center;
+    margin-bottom: 0px;
+    color: #123666;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.register_tutor_page ul.miniNav {
+    display: none;
+}
+
+.tutor-multi-signup .lSide.ckEditor {
+    float: left;
+    width: 45% !important;
+    max-width: 100% !important;
+}
+.tutor-multi-signup .logBlk {
+    max-width: 100%;
+    float: right;
+    width: 75%;
+}
+.tutor-multi-signup #logOn {
+    background-position: center !important;
+}
+.tutor-multi-signup .lSide.ckEditor {
+    display: none;
+}
+.tutor-multi-signup #logOn .ouTer {
+    align-items: center;
+    justify-content: center !important;
+}
+.tutor-multi-signup #logOn {
+    background: #eee !important;
+}
+.tutor-multi-signup #logOn:before {
+    display: none !important;
+}
+
+/************* media css *****************/
+
+@media (max-width: 1400px) {
+    .crainly-section-content-inner-cnt h2 {
+        max-width: 84%;
+    }
+}
+@media (max-width: 1199px) {
+    .crainly-section-content-inner-cnt h2 {
+        font-size: 21px;
+        line-height: 21px;
+    }
+    .crainly-request-section-row-middle p {
+        font-size: 18px;
+    }
+    .crainly-request-section-row-middle a {
+        padding: 10px 20px;
+    }
+    .footer-top .footer-top-inner ul.footer_subject li {
+        width: 46%;
+        display: inline-block;
+        padding: 8px;
+        border: 3px solid rgba(18, 54, 102, 0.15);
+        margin-right: 6px;
+    }
+}
+@media (max-width: 991px) {
+    .crainly-section-content-inner-cnt h2 {
+        max-width: 100%;
+    }
+    .crainly-section-content-inner-cnt h2 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .crainly-section-content-inner-cnt p {
+        font-size: 13px;
+    }
+    .crainly-request-section-inner {
+        display: block;
+        text-align: center;
+    }
+    .crainly-request-section-inner .crainly-request-section-row {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .crainly-request-section-row-right {
+        text-align: center;
+    }
+    .footer-top {
+        display: block;
+    }
+    .footer-top .footer-top-inner {
+        padding-right: 0px;
+        margin-bottom: 30px;
+        width: 49%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .footer-top .footer-top-inner:first-child {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-top .footer-top-inner img {
+        display: inline-block;
+    }
+    .footer-top .footer-top-inner span {
+        float: left;
+        width: 100%;
+    }
+    .footer-top .footer-top-inner span:before {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .register_tutor_page header.logonHeader .logo,
+    .register_page header.logonHeader .logo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .crainly-request-section {
+        padding: 0px 0px 50px;
+    }
+    .register_tutor_page .ouTer {
+        display: block !important;
+    }
+    .register_tutor_page .lSide.ckEditor {
+        width: 100% !important;
+    }
+    .register_tutor_page .logBlk {
+        width: 100%;
+        margin-top: 20px !important;
+    }
+    .register_tutor_page #logOn,
+    .register_page #logOn {
+        padding-top: 15px;
+        background-position: center !important;
+    }
+    .register_tutor_page #logOn .ouTer .lSide h1 {
+        font-size: 24px;
+    }
+    .register_tutor_page #logOn .ouTer .lSide p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .footer-top .footer-top-inner {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-top .footer-top-inner h3:before {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .crainly-section-content {
+        display: block;
+    }
+    .crainly-section-content-inner {
+        width: 100%;
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+    .register_tutor_page .card-body label.checkbox-inline {
+        width: 49%;
+    }
+}
+@media (max-width: 560px) {
+    .register_tutor_page .logBlk .webBtn {
+        padding: 20px 40px !important;
+        width: 100%;
+    }
+    .register_tutor_page .logBlk form .bTn.text-center {
+        display: block;
+    }
+    .register_tutor_page .logBlk button#prevBtn {
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+    .register_page .logBlk form h2 {
+        font-size: 24px;
+    }
+    .register_page .logBlk form {
+        padding: 30px !important;
+    }
+    .register_tutor_page .card-body label.checkbox-inline {
+        width: 100%;
+    }
+}
+
+.tutor-multi-signup #logOn {
+    background-attachment: fixed !important;
+}
+
+.tutor-multi-signup #logOn .ouTer {
+    align-items: flex-start;
+}
+
+/* .register_tutor_page #logOn {
+    background-attachment: fixed !important;
+} */
+
+.register_tutor_page #logOn .ouTer {
+    align-items: flex-start;
+}
+
+#locationField,
+#controls {
+    position: relative;
+    width: 480px;
+}
+
+.label {
+    text-align: right;
+    font-weight: bold;
+    width: 100px;
+    color: #303030;
+    font-family: "Roboto";
+}
+#address {
+    border: 1px solid #000090;
+    background-color: #f0f9ff;
+    width: 480px;
+    padding-right: 2px;
+}
+#address td {
+    font-size: 10pt;
+}
+.field {
+    width: 99%;
+}
+.slimField {
+    width: 80px;
+}
+.wideField {
+    width: 200px;
+}
+#locationField {
+    height: 37px;
+    margin-bottom: 2px;
+}
+
+.connect-button {
+    display: inline-block;
+    margin-bottom: 1px;
+    background: #2eb380 !important;
+    -webkit-font-smoothing: antialiased;
+    border: 0;
+    padding: 10px 50px;
+    height: auto;
+    text-decoration: none;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none !important;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.help-tip {
+    text-align: center;
+    background-color: #bcdbea;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: default;
+    display: inline-block;
+    position: relative;
+}
+
+.help-tip:before {
+    content: "?";
+    font-weight: bold;
+    color: #fff;
+}
+
+.help-tip:hover p {
+    display: block;
+    transform-origin: 100% 0%;
+
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.help-tip p {
+    /* The tooltip */
+    display: none;
+    text-align: left;
+    background-color: #1e2021;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    left: -2px;
+    z-index: 999;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.help-tip p:before {
+    /* The pointer of the tooltip */
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #1e2021;
+    left: 10px;
+    top: -12px;
+}
+
+.help-tip p:after {
+    /* Prevents the tooltip from being hidden */
+    width: 100%;
+    height: 40px;
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+/* CSS animation */
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div#myModal {
+    background: rgba(0, 0, 0, 0.7);
+}
+div#myModal .modal-content {
+    position: absolute;
+    width: 100%;
+    max-width: 350px;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    top: 45%;
+    padding: 15px 15px 10px;
+}
+.footer_section {
+    background: #006ea5;
+    padding: 20px 30px;
+    width: 100%;
+    float: left;
+}
+.footer_section ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer_section ul li {
+    margin: 0px;
+    padding: 0px 10px;
+    list-style: none;
+    display: inline-block;
+}
+.footer_section ul li a {
+    color: #fff;
+}
+.footer_section .footer_left {
+    width: 160px;
+}
+.footer_section .footer_center {
+    width: auto;
+    text-align: center;
+}
+.footer_section .footer_right {
+    width: auto;
+}
+.how_works_section {
+    width: 100%;
+    /*float: left;*/
+    padding: 15% 0;
+    background-size: cover;
+    color: #fff;
+}
+
+/******* new css *********/
+
+.contact_icon_sec_inner {
+    margin: 0 auto;
+    max-width: 75%;
+}
+#banner .content h1 {
+    /* font-family: "semi" !important; */
+    font-weight: 900 !important;
+    text-transform: uppercase;
+}
+#banner form .lst > li:nth-child(1) .txtBox {
+    border-radius: 0px !important;
+}
+#banner form .lst > li .txtBox {
+    height: 55px !important;
+    padding: 5px 15px 6px !important;
+    /* font-family: "semi" !important; */
+    font-size: 14px;
+}
+#banner .content p {
+    max-width: 74% !important;
+    margin: 0 auto 20px !important;
+}
+#banner form .lst > li .webBtn {
+    height: 55px !important;
+    /* font-family: "semi" !important; */
+    border-radius: 0px !important;
+    font-size: 15px;
+    line-height: 29px;
+}
+#how-it-works h1.secHeading {
+    font-size: 35px;
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+    line-height: normal !important;
+    position: relative;
+    color: #000 !important;
+}
+#how-it-works h1.secHeading:before {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #000;
+    width: 8%;
+    height: 3px;
+    display: block;
+}
+.content p.pre {
+    font-size: 20px;
+    font-family: "lite" !important;
+    color: #000 !important;
+}
+#how-it-works .inner .icon img {
+    height: 130px;
+    object-fit: contain;
+}
+#how-it-works .lst {
+    margin: 40px 0px !important;
+}
+#how-it-works .lst > li .inner {
+    padding: 0 40px !important;
+}
+#how-it-works .lst > li .inner .cntnt h3 {
+    color: #000 !important;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
+    font-weight: 300;
+    font-family: "semi" !important;
+}
+#how-it-works .lst > li .inner .cntnt p {
+    font-size: 16px;
+    color: #4e566d;
+}
+.how_works_section {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+#why-us {
+    padding: 0px !important;
+}
+#why-us h3 {
+    font-size: 45px;
+    color: #fff;
+}
+#why-us p {
+    font-size: 22px;
+}
+#why-us .bTn.text-center {
+    text-align: left !important;
+}
+#cards {
+    margin-bottom: 0px !important;
+}
+#cards .content {
+    max-width: 700px;
+}
+#cards h1.secHeading {
+    font-size: 40px;
+    color: #000 !important;
+}
+#cards p.pre {
+    text-align: center;
+    font-size: 22px;
+    color: #000 !important;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+#cards .bTn {
+    text-align: center;
+}
+#cards .bTn a {
+    background: #2cb1ff;
+    color: #fff !important;
+    height: 46px;
+    font-size: 16px;
+    padding: 12px 30px 0;
+    font-family: "regular";
+    text-align: center;
+}
+.contact_icon_sec {
+    float: left;
+    width: 100%;
+    padding: 100px 0px;
+}
+.contact_icon_sec .icon img {
+    object-fit: contain;
+    height: 70px;
+    width: 70px;
+}
+.contact_icon_sec .icon_cont {
+    text-align: center;
+}
+.contact_icon_sec .icon_cont h3 {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: #000 !important;
+}
+.copyright.text-center {
+    display: none;
+}
+.footer_section {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer_section ul li {
+    padding: 0px 22px;
+}
+.footer_section .footer_center li a {
+    font-size: 18px;
+}
+section#contact {
+    padding: 0px 0px 50px;
+}
+.footer_section .footer_right li {
+    padding: 0px 10px;
+}
+.login-popup {
+    background: #0000009e !important;
+    /* background: #33b1fda6 !important; */
+}
+.login-popup .logBlk._inner {
+    max-width: 500px;
+}
+.login-popup .logBlk._inner form#frmLogin {
+    padding: 34px !important;
+}
+.register_page .PlusClass {
+    max-width: inherit;
+}
+.register_page .PlusClass .logBlk._inner {
+    width: auto !important;
+    max-width: 500px !important;
+    margin-top: -10px;
+}
+.register_tutor_page form#frmLogin .haveAccount.text-center a:hover {
+    background: transparent !important;
+    font-family: inherit;
+    border: 0 !important;
+    text-transform: unset;
+    font-size: 15px;
+}
+.login-popup .logBlk._inner h2 {
+    text-align: center;
+    font-size: 32px;
+}
+.login-popup .logBlk._inner .haveAccount.text-center {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.login-popup .logBlk._inner .haveAccount.text-center a {
+    color: rgb(44, 177, 255) !important;
+}
+.login-popup .oRLine span {
+    font-size: 14px;
+}
+.login-popup .facebook {
+    width: 100%;
+    margin: 0px 0px;
+    border-radius: 8px;
+    background: transparent;
+}
+.login-popup .facebook img {
+    height: 50px;
+    object-fit: contain;
+}
+body .login-popup .txtGrp label {
+    font-size: 16px !important;
+}
+.login-popup .txtGrp input {
+    border: 1px solid #33b1fd !important;
+    height: 55px !important;
+    box-shadow: none !important;
+}
+.login-popup .crosBtn:before {
+    content: "\2715";
+    font-size: 26px !important;
+    right: 15px !important;
+    position: absolute !important;
+}
+.login-popup .txtGrp {
+    margin-bottom: 25px !important;
+}
+.login-popup #pass {
+    text-align: left;
+    width: 100%;
+    margin-top: 0px;
+    color: #2cb1ff;
+    font-size: 15px;
+}
+.login-popup-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*.login-popup .bTn.text-center .webBtn.colorBtn.lgBtn {
+    background: #2cb1ff;
+    font-size: 17px;
+    font-weight: 800 !important;
+    width: auto !important;
+    line-height: normal;
+    padding: 0px 55px !important;
+}*/
+body .login-popup .tableDv .bTn.text-center .webBtn.colorBtn.lgBtn {
+    background: #2cb1ff !important;
+    font-size: 17px;
+    font-weight: 800 !important;
+    width: auto !important;
+    line-height: normal;
+    padding: 0px 55px !important;
+    font-family: unset;
+    height: 46px !important;
+}
+.login-popup-btn .rememberMe {
+    margin: 0px;
+}
+.login-popup .oRLine {
+    margin: 20px 0 20px !important;
+}
+
+.Invite-section {
+    display: flex;
+    justify-content: space-between;
+    background: #32b0fc9e;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 6px 3px #00000052;
+}
+div#inviteFrnd .formBlk.text-center {
+    max-width: 48% !important;
+    width: 100% !important;
+    float: left;
+    padding: 0px !important;
+    margin: 0px;
+}
+.Invite-section .refLnk.relative {
+    box-shadow: 0px 0px 5px 0px #00000040;
+}
+div#inviteFrnd h4 {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 900;
+}
+div#inviteFrnd p {
+    font-size: 15px;
+    color: #000;
+}
+.Invite-section-tittle {
+    min-height: 56px;
+}
+div#inviteFrnd h5 {
+    font-size: 20px;
+    color: #000;
+    margin: 0px 0px 20px;
+    text-transform: capitalize;
+}
+div#inviteFrnd .refLnk.relative .webBtn {
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+div#inviteFrnd .refLnk.relative .txtBox {
+    box-shadow: none !important;
+    font-family: inherit;
+    padding-right: 81px;
+}
+.invite-image-section .image {
+    max-width: 50% !important;
+    text-align: center;
+}
+.invite-image-section .image img {
+    max-width: 200px;
+    display: inline-block;
+}
+.invite-image-section h4 {
+    color: #000 !important;
+    margin-top: 30px;
+}
+.invite-image-section {
+    margin-bottom: 35px;
+}
+.invite-image-section button {
+    background: transparent !important;
+    border: 2px solid #32b0fb;
+    margin-top: 20px;
+    font-weight: 700 !important;
+    font-family: "semi" !important;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: #32b0fb !important;
+}
+.invite-image-section button:hover {
+    background: #32b0fb !important;
+    color: #fff !important;
+}
+
+@media (max-width: 1328px) {
+    .footer_section .footer_right li {
+        padding: 0px 4px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .footer_section ul li {
+        padding: 0px 11px;
+    }
+    .footer_section .footer_center li a {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1125px) {
+    div#inviteFrnd .formBlk.text-center {
+        max-width: 100% !important;
+        margin-bottom: 30px;
+    }
+    div#inviteFrnd .formBlk.text-center:last-child {
+        margin-bottom: 0px;
+    }
+    .blk {
+        overflow: hidden;
+    }
+    .Invite-section {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+    .Invite-section-tittle {
+        min-height: auto;
+    }
+}
+@media (max-width: 920px) {
+    .footer_section .footer_left {
+        width: 15%;
+    }
+    .footer_section ul li {
+        padding: 0px 7px;
+    }
+    .footer_section .footer_center li a {
+        font-size: 14px;
+    }
+    .footer_section .footer_right li {
+        padding: 0px 4px;
+        width: 25%;
+    }
+}
+@media (max-width: 850px) {
+    body {
+        padding-bottom: 0;
+    }
+    .footer_section {
+        display: block;
+        position: relative;
+        bottom: 0;
+    }
+    .footer_section .footer_left {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .footer_section .footer_left img {
+        max-width: 200px;
+        display: inline-block;
+    }
+    .contact_icon_sec .icon_cont {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer_section .footer_center {
+        width: 100%;
+    }
+    .footer_section .footer_right {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer_section .footer_right li {
+        width: auto;
+    }
+}
+@media (max-width: 767px) {
+    .contact_icon_sec_inner {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    #banner .content p {
+        max-width: 100% !important;
+        margin: 0 auto 20px !important;
+    }
+    header .login-popup form {
+        display: block !important;
+    }
+    .logBlk._inner .crosBtn {
+        top: 64px;
+        z-index: 999;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer_section ul li {
+        padding: 9px 0px;
+        width: 100%;
+    }
+    .footer_section .footer_right li {
+        width: auto;
+        padding: 0px 15px;
+    }
+    .invite-image-section .image {
+        max-width: 90% !important;
+    }
+    .Invite-section .refLnk {
+        display: block !important;
+        box-shadow: none !important;
+    }
+    div#inviteFrnd .refLnk.relative .txtBox {
+        padding-right: 10px;
+        margin-bottom: 10px;
+    }
+    div#inviteFrnd .refLnk.relative .webBtn {
+        position: initial;
+        padding: 10px 37px !important;
+        height: auto !important;
+        margin-left: 0px !important;
+    }
+    .login-popup-btn {
+        display: block;
+        text-align: center;
+    }
+    .login-popup #pass {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .login-popup .logBlk._inner form#frmLogin {
+        padding: 25px;
+    }
+    .login-popup .txtGrp input {
+        height: 45px !important;
+    }
+}
+.PlusClass .rememberMe {
+    margin-top: 0px !important;
+}
+
+.PlusClass {
+    max-width: 500px;
+}
+
+.PlusClass .logBlk._inner {
+    width: 100%;
+}
+
+.PlusClass .logBlk._inner .haveAccount.text-center span {
+    color: #333;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.PlusClass .logBlk._inner .haveAccount.text-center {
+    font-size: 12px !important;
+}
+
+.PlusClass .logBlk._inner a {
+    padding: 0 !important;
+    border: 0px !important;
+    /* margin: 0px; */
+    /* display: inline-block; */
+}
+
+.PlusClass .logBlk._inner button.webBtn.colorBtn.lgBtn {
+    background: #2cb1ff !important;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    width: auto !important;
+    line-height: normal;
+    padding: 15px 55px !important;
+    border-radius: 4px;
+    border: 0px !important;
+    box-shadow: 0 0 0;
+}
+
+.stripe-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+    border-radius: 4px;
+    border: 2px solid #909aa64d;
+    margin-bottom: 30px;
+}
+.stripe-section p.stripe_detail {
+    width: 80%;
+    float: left;
+    color: #909aa6;
+    font-size: 16px;
+}
+.stripe-section img {
+    max-width: 100px;
+}
+
+.stripe-tag {
+    background-color: #f7fafc;
+    max-width: 63%;
+    margin: 0 auto;
+}
+.stripe-tag ._header {
+    margin: 0px !important;
+    padding: 0px !important;
+    margin-bottom: 10px !important;
+    border-bottom: 0px !important;
+}
+
+span.stripe-heading {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #909aa6;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 1px;
+}
+
+.connect-button span {
+    font-size: large;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.stripe-section p.stripe_detail b {
+    color: #5a6576;
+}
+
+#myTrans.inSide .blk .tableBlk p.regular {
+    padding: 0 20px;
+    font-size: 16px;
+}
+#myTrans.inSide .blk .tableBlk div#date_filter {
+    padding: 0 5px;
+}
+#myTrans.inSide .blk .tableBlk .dataTables_wrapper {
+    margin-top: 30px !important;
+    display: inline-block;
+    width: 100%;
+}
+#myTrans.inSide .blk .tableBlk .dataTables_wrapper .dataTables_filter {
+    text-align: left;
+    margin-bottom: 10px;
+}
+#myTrans.inSide .blk .tableBlk .dataTables_wrapper input[type="search"] {
+    margin: 4px 0 0 0;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: 0 0;
+}
+#myTrans.inSide .blk .tableBlk div#date_filter input {
+    margin: 4px 0 0 0;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: 0 0;
+    height: 30px;
+}
+ul.list.lesson-disc li:last-child {
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.checkbox-inline {
+    margin: 14px !important;
+}
+
+div#profileSet form#frmAdditionalSubjects ul.subjLst label input[type="checkbox"] {
+    margin-left: -24px;
+}
+div#profileSet form#frmAdditionalSubjects ul.subjLst label {
+    width: 20%;
+    float: left;
+    height: auto;
+    line-height: 24px;
+    margin: 14px 14px !important;
+}
+
+@media (max-width: 1024px) {
+    div#profileSet form#frmAdditionalSubjects ul.subjLst label {
+        width: 27%;
+    }
+}
+
+@media (max-width: 991px) {
+    div#profileSet form#frmAdditionalSubjects ul.subjLst label {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main_for_check label.checkbox-inline {
+        width: auto;
+    }
+    div#profileSet form#frmAdditionalSubjects ul.subjLst label {
+        width: 37%;
+        font-size: 13px;
+    }
+}
+
+.apply_button {
+    background-color: #022b5e;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: "semi";
+    font-weight: normal !important;
+    cursor: pointer;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+.promo_code {
+    display: none;
+}
+.promo_code input {
+    border: 1px solid #ccc;
+}
+
+.text-head {
+    color: #63c1ff;
+}
+
+div#add_new_card {
+    z-index: 9999;
+}
+
+div#service_details {
+    z-index: 9999;
+}
+
+div.bank_details {
+    z-index: 9999;
+}
+
+div.card_update {
+    z-index: 9999;
+}
+strong.apply_promo_code .col-md-12.applied_promo_code {
+    padding: 0;
+}
+
+.check_back {
+    color: #2cb1ff;
+    font-weight: 600;
+}

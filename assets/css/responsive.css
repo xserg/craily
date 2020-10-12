@@ -1,0 +1,919 @@
+/*___________________________________
+___________________________________
+        Media Queries
+___________________________________*/
+
+@media screen and (min-width:1600px) {
+    #dash .lBar {
+        left: initial !important;
+        right: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    /*_____ Home _____*/
+    #how-it-works .lst > li .inner {
+        padding: 0 20px;
+    }
+    /*_____ Others _____*/
+    #search .flexRow > .col1 {
+        width: 30%;
+    }
+    #search .flexRow > .col2 {
+        width: 70%;
+    }
+    #search .lst > li {
+        width: 50%;
+    }
+    #profile .flexRow > .col1,
+    #profile .flexRow > .col3 {
+        width: 40%;
+    }
+    #profile .flexRow > .col2,
+    #profile .flexRow > .col4,
+    #profile .flexRow > .col5 {
+        width: 60%;
+    }
+    #dashboard .tileBlk > li {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    /*_____ Home _____*/
+    footer .flexRow > .col {
+        width: 50%;
+    }
+    footer .flexRow > .col1 {
+        width: 100%;
+    }
+    /*_____ Others _____*/
+    .blockLst > li,
+    .blockLst > li .icoBlk {
+        flex-flow: column;
+    }
+    .blockLst > li > div {
+        margin: 0 0 10px;
+    }
+    .blockLst > li .name {
+        margin: 5px 0 0;
+    }
+    #messages .list > li {
+        display: block;
+    }
+    #messages .list > li strong {
+        width: auto;
+        margin: 0 0 5px;
+    }
+
+    /*=========================my jobs page===============*/
+
+    .blockLst .innerJobList .job-meta{
+        width: calc(100% - 86px)!important;
+        padding-bottom: 25px;
+    }
+
+    .boardJob{
+        margin-left: auto!important;
+    float: none;
+    text-align: right;
+    /*margin-top: 159px;*/
+    }
+}
+
+@media screen and (max-width:991px) {
+    /*_____ Navigation _____*/
+    html.move {
+        overflow: hidden !important;
+    }
+    body {
+        left: 0;
+        padding-top: 0;
+    }
+    body.move {
+        overflow: hidden !important;
+    }
+    header {
+        position: relative !important;
+        top: 0 !important;
+        background: #008cd2;
+        height: auto;
+    }
+    header.logged {
+        position: fixed !important;
+        height: 64px;
+    }
+    .logo {
+        width: 140px;
+    }
+    header.fix .proIco {
+        margin-right: 40px;
+    }
+    .toggle {
+        display: block;
+    }
+    nav {
+        display: block;
+        display: none;
+        float: none;
+        background: #192125;
+        text-align: center;
+        margin: 0 -15px;
+        margin-top: 64px !important;
+        -webkit-transition: none !important;
+        -o-transition: none !important;
+        transition: none !important;
+    }
+    nav > ul,
+    nav > ul > li,
+    nav > ul > li > a {
+        display: block;
+    }
+    nav > ul > li {
+        padding: 5px 15px;
+        border-top: 1px solid #333;
+    }
+    header form {
+        min-width: 300px;
+        margin-left: 30px;
+    }
+    /*_____ Home _____*/
+    #banner {
+        margin-top: 0;
+        padding: 50px 0;
+    }
+    #how-it-works .lst > li {
+        width: 100%;
+    }
+    #lessons .flexRow > .col {
+        width: 100%;
+        padding-right: 10px;
+    }
+    #lessons .flexRow > .col2 {
+        margin-top: 50px;
+    }
+    #students .flexRow > .col {
+        width: 100%;
+    }
+    #students .flexRow > .col1 {
+        text-align: center;
+        padding-right: 10px;
+    }
+    #students .flexRow > .col2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #owl-partner {
+        padding: 0 50px;
+    }
+    footer {
+        padding-top: 40px;
+    }
+    footer .upside {
+        display: none;
+    }
+    footer .flexRow > .col {
+        width: 100%;
+    }
+    /*_____ Common _____*/
+    #about .flexRow > .col {
+        width: 100%;
+    }
+    #about h2 {
+        font-size: 20px;
+    }
+    #about .nav-tabs {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    #about .nav-tabs > li {
+        display: block;
+        margin-bottom: -1px;
+    }
+    #about .nav-tabs > li > a {
+        display: block;
+        background: transparent;
+        color: #bbb;
+        padding: 0 0 5px;
+        margin-right: 25px;
+        border: 0;
+        border-bottom: 2px solid transparent;
+        border-radius: 0 !important;
+    }
+    #about .nav-tabs > li.active > a,
+    #about .nav-tabs > li a:hover {
+        color: #37b36f;
+        border-bottom-color: #37b36f;
+    }
+    /*_____ Others _____*/
+    #logOn,
+    #not404 {
+        margin-top: 0;
+    }
+    .circleBtn {
+        display: block;
+    }
+    #search .flexRow > .col {
+        width: 100%;
+		margin-top: 50px;
+    }
+    #search .flexRow > .col1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #f8f9fa;
+        padding: 15px 15px 60px;
+        visibility: hidden;
+        opacity: 0;
+        overflow: auto;
+        overflow-x: hidden;
+        z-index: 55;
+    }
+    #search .flexRow > .col1.active {
+		visibility: visible;
+        opacity: 1;
+
+    }
+    #search .lst > li {
+        width: 50%;
+    }
+    #beTutor .subjLst > li {
+        width: 50%;
+    }
+    #profile .flexRow {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+    #profile .flexRow > .col {
+        float: none;
+        width: 100%;
+    }
+    #profile .flexRow > .col1 {
+        order: -2;
+    }
+    #profile .flexRow > .col4 {
+        order: -1;
+    }
+    #messages {
+        margin-top: 0;
+    }
+    #messages .flexRow > .col1 {
+        width: 300px;
+        min-width: 300px;
+    }
+    #messages .chatBlk .chat .buble {
+        max-width: 100%;
+    }
+    #dash {
+        padding-top: 84px;
+    }
+    #dashboard .tileBlk > li {
+        width: 100%;
+    }
+
+    #profile .dpBlk .btnLst > li {
+        width: 33.33%;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    /*___________________________________
+    ___________________________________
+            All Site
+    ___________________________________*/
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 15px;
+    }
+    .txtGrp {
+        margin-bottom: 10px;
+    }
+    .secHeading {
+        font-size: 24px;
+    }
+    p.pre {
+        font-size: 16px;
+    }
+    /*_____ Navigation _____*/
+    header .global > li.srchBtn {
+        display: inline-block;
+    }
+    header form {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        min-width: 100px;
+        background: #192125;
+        margin: 0;
+        padding: 0 15px 10px;
+    }
+    /*_____ Home _____*/
+    #banner {
+        min-height: 420px;
+    }
+    #banner .content h1 {
+        font-size: 32px;
+    }
+    #banner .content p {
+        font-size: 16px;
+    }
+    #why-us .lst > li .inner {
+        padding: 0;
+    }
+    /*_____ Common _____*/
+    #sBanner {
+        min-height: 100px;
+        padding: 30px 0 25px;
+    }
+    #sBanner.srchBanner {
+        padding: 30px 0 60px;
+    }
+    #sBanner .content h1 {
+        font-size: 28px;
+    }
+    #about .aboutLst > li .ico {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+        font-size: 40px;
+        margin-right: 15px;
+    }
+    #about .aboutLst > li h4 {
+        font-size: 24px;
+    }
+    #contact .flexRow > .col {
+        width: 100%;
+    }
+    #contact form .bTn {
+        text-align: center;
+    }
+    #not404 .inside .ico {
+        font-size: 100px;
+        margin-bottom: 20px;
+    }
+    /*_____ Others _____*/
+    #logOn .image {
+        height: 240px;
+    }
+    .logBlk {
+        margin: -100px auto 0;
+    }
+    #search .srchBar .srchLst > li:nth-child(1) {
+        width: 50%;
+    }
+    .cardBlk .icoBlk .subjects {
+        height: auto;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    #messages {
+        min-height: 100px;
+    }
+    #messages .flexRow {
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        border: transparent;
+    }
+    #messages .flexRow > .col {
+        width: 100%;
+        padding: 0;
+    }
+    #messages .flexRow > .col1 {
+        min-width: 100px;
+    }
+    #messages .flexRow > .col2 {
+        height: 0;
+    }
+    #messages .flexRow > .col3 {
+        display: none;
+    }
+    #messages .barBlk,
+    #messages .chatBlk {
+        border: transparent !important;
+    }
+    #messages .chatPerson {
+        text-align: left;
+        display: -webkit-flex !important;
+        display: -moz-flex !important;
+        display: -ms-flex !important;
+        display: -o-flex !important;
+        display: flex !important;
+        justify-content: initial;
+    }
+    #messages .chatPerson .backBtn {
+        display: block;
+    }
+    #messages .chatBlk {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: auto;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s;
+        z-index: 10;
+    }
+    #messages .chatBlk.active {
+        visibility: visible;
+        opacity: 1;
+    }
+    #messages .chatBlk .chat {
+        padding: 10px 15px 0;
+    }
+    #messages .chatBlk .chat .buble .cntnt {
+        padding: 5px 15px 5px;
+    }
+    #messages .chatBlk .write {
+        background: #fafafa;
+    }
+    #messages .chatBlk .write textarea {
+        max-height: 50px !important;
+    }
+    #dash .lBar {
+        position: static;
+        width: auto;
+        background: #fff;
+        padding: 0;
+        margin: 0 0 20px;
+        border-radius: 4px;
+        box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+    }
+    #dash .lBar .head {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+    #sBar {
+        display: none;
+    }
+    #sBar > li {
+        border-top: 1px solid #eee;
+    }
+    #sBar > li > a {
+        padding: 10px 15px;
+    }
+    #dash .proIco {
+        display: none;
+    }
+    #dash .inSide {
+        padding: 0;
+    }
+    #dashboard .tileBlk > li {
+        width: 50%;
+    }
+    .blk .tableBlk .dataTables_info {
+        margin-left: 0;
+    }
+    .blk .tableBlk .dataTables_paginate {
+        margin-right: 0;
+        padding-top: 0;
+    }
+
+
+    /*==============================maincss==============================*/
+
+    /*jobs page*/
+
+    .innerJobList .ico {
+    width: 56px;
+     /*float: none; 
+    margin: 0px auto;*/
+    }
+    .innerJobList .ico h4{
+        top: 80px!important;
+    }
+    .innerJobList .job-meta {
+    /*width: calc(100% - 14px);
+     padding-left: 0px; 
+    margin-top: 10px;
+    text-align: center;*/
+    width: calc(100% - 60px);
+    }
+    .d-flex{
+        display: block!important;
+    }
+    ._jobDetail p{
+        float: left;
+    margin-top: 7px;
+    margin-left: 62px;
+    }
+    ._jobDetail {
+    margin-left: auto!important;
+     float: none; 
+    text-align: center;
+    }
+    .innerJobList{
+        padding: 20px 5px;
+    }
+
+    /*job detail page*/
+
+    ._jodDesc{
+        width: 100%!important;
+    }
+    ._jodDesc:nth-child(2){
+        order: 1;
+    }
+    ._jodDesc:nth-child(1){
+        order: 2;
+    }
+    .blockLst .innerJobList .meta-info p{
+        font-size: 12px;
+    }
+
+    /*======================my jobs page=================*/
+
+    /*=========================my jobs page===============*/
+
+    .blockLst .innerJobList .job-meta{
+        /*width: calc(100% - 3px)!important;*/
+    }
+    .boardJob{
+        margin-top: 30px;
+    margin-bottom: -20px;
+    float: right;
+    }
+}
+@media screen and (max-width:680px) {
+#profile .dpBlk .btnLst > li {
+    width: 100%;
+}
+}
+
+@media screen and (max-width:580px) {
+    /*----- col-xx-? -----*/
+    .col-xx-12 {
+        width: 100%;
+    }
+    .col-xx-11 {
+        width: 91.66666667%;
+    }
+    .col-xx-10 {
+        width: 83.33333333%;
+    }
+    .col-xx-9 {
+        width: 75%;
+    }
+    .col-xx-8 {
+        width: 66.66666667%;
+    }
+    .col-xx-7 {
+        width: 58.33333333%;
+    }
+    .col-xx-6 {
+        width: 50%;
+    }
+    .col-xx-5 {
+        width: 41.66666667%;
+    }
+    .col-xx-4 {
+        width: 33.33333333%;
+    }
+    .col-xx-3 {
+        width: 25%;
+    }
+    .col-xx-2 {
+        width: 16.66666667%;
+    }
+    .col-xx-1 {
+        width: 8.33333333%;
+    }
+    .secHeading {
+        font-size: 22px;
+    }
+    /*_____ Home _____*/
+    #why-us .lst > li {
+        width: 100%;
+    }
+    #cards .content p {
+        font-size: 16px;
+    }
+    footer .lst > li {
+        margin-bottom: 5px;
+    }
+    /*_____ Common _____*/
+    #sBanner .content h1 {
+        font-size: 26px;
+    }
+    #about .founderLst > li .inner {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+    #about .founderLst > li .ico {
+        margin-bottom: 15px;
+    }
+    #about .founderLst > li h3 {
+        font-size: 18px;
+    }
+    /*_____ Others _____*/
+    #search .srchBar .srchLst {
+        flex-flow: column;
+    }
+    #search .srchBar .srchLst > li,
+    #search .srchBar .srchLst > li .webBtn {
+        width: 100% !important;
+    }
+    .notiBlk > .inner .cntnt {
+        padding-top: 0;
+    }
+    .blockLst > li,
+    .blockLst > li .icoBlk {
+        flex-flow: column;
+    }
+    .blockLst > li > div {
+        margin: 0 0 10px;
+    }
+    .blockLst > li .name {
+        margin: 5px 0 0;
+    }
+}
+
+@media screen and (max-width:480px) {
+    /*----- col-xx-? -----*/
+    .col-xx-12,
+    .col-xx-11,
+    .col-xx-10,
+    .col-xx-9,
+    .col-xx-8,
+    .col-xx-7,
+    .col-xx-6,
+    .col-xx-5,
+    .col-xx-4,
+    .col-xx-3,
+    .col-xx-2,
+    .col-xx-1 {
+        width: 100% !important;
+    }
+    /*_____ Navigation _____*/
+    header.fix .proIco {
+        margin-right: 28px;
+    }
+    header .global {
+        margin-right: 5px;
+        margin-left: 0;
+    }
+    header .global > li.helpBtn {
+        display: none;
+    }
+    /*_____ Home _____*/
+    #banner .content h1 {
+        font-size: 28px;
+    }
+    #banner form .lst {
+        flex-flow: column;
+    }
+    #banner form .lst > li {
+        width: 100% !important;
+    }
+    #banner form .lst > li:nth-child(1) .txtBox {
+        border-bottom: 1px solid #eee;
+        border-radius: 4px 4px 0 0;
+    }
+    #banner form .lst > li .webBtn {
+        width: 100%;
+        border-radius: 0 0 4px 4px;
+    }
+    #why-us .lst {
+        margin: -15px -15px 10px;
+    }
+    #why-us .lst > li {
+        padding: 15px;
+    }
+    footer .btmBlk {
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .btmBlk .list {
+        flex: none;
+    }
+    footer .social {
+        margin-top: 5px;
+    }
+    /*_____ Common _____*/
+    #sBanner .content h1 {
+        font-size: 24px;
+    }
+    #contact h3 {
+        font-size: 18px;
+    }
+    .faqLst > li h3 {
+        font-size: 15px;
+    }
+    #terms h3 {
+        font-size: 18px;
+    }
+    .popup .list > li {
+        display: block;
+    }
+    .popup .list > li strong {
+        width: auto;
+        margin: 0 0 5px;
+    }
+    /*_____ Others _____*/
+    #search .lst > li {
+        width: 100%;
+    }
+    #search .topHead {
+        display: block;
+    }
+    #search .topHead h2 {
+        margin: 0 0 10px;
+    }
+    #search .topHead .miniBtn .txtBox.bootstrap-select {
+        max-width: none;
+    }
+    #beTutor .subjLst > li {
+        width: 100%;
+    }
+    #beTutor .list > li {
+        display: block;
+    }
+    #beTutor .list > li strong {
+        width: auto;
+        margin-right: 0;
+    }
+    #dashboard .tileBlk > li {
+        width: 100%;
+    }
+    #dashboard .tileBlk > li .inner {
+        padding: 15px;
+    }
+    .blk .tableBlk .dataTables_filter {
+        margin-bottom: 10px;
+    }
+    .notiBlk > .inner .ico {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    #myTrans .blans {
+        display: block;
+    }
+    #myTrans .blans h4 {
+        margin: 0 0 10px;
+    }
+    #myTrans .blans > a {
+        width: 100%;
+    }
+    #messages .chatBlk .blk {
+        margin: 10px 0 20px;
+    }
+    #payMthd .inner .ico {
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    header .proIco {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    /*_____ Navigation _____*/
+    header .global li {
+        padding: 0 3px 0;
+    }
+    header .global .notifiDrop {
+        right: -45px;
+        width: 270px;
+    }
+    /*_____ Home _____*/
+    #banner .content h1 {
+        font-size: 26px;
+    }
+    #banner .content p {
+        font-size: 14px;
+    }
+    #how-it-works .lst > li .inner {
+        padding: 0;
+    }
+    #why-us .cntnt h3 {
+        font-size: 16px;
+    }
+    #students .flexRow > .col2 {
+        padding-top: 0;
+    }
+    #cards .content p {
+        font-size: 14px;
+    }
+    /*_____ Common _____*/
+    #sBanner .content h1 {
+        font-size: 22px;
+    }
+    #sBanner .content ul > li {
+        font-size: 12px;
+    }
+    .faqLst > li h3 {
+        font-size: 14px;
+    }
+    #terms h3 {
+        font-size: 16px;
+    }
+    /*_____ Others _____*/
+    .blk {
+        padding: 15px;
+    }
+    .blk ._header,
+    .blk ._footer {
+        padding: 15px 15px 13px;
+    }
+    .blk ._header {
+        margin: -15px -15px 15px;
+    }
+    .blk ._footer {
+        margin: 10px -15px -15px;
+    }
+    .blk ._header h3 {
+        font-size: 15px;
+    }
+    #beTutor .phoneLst {
+        margin: 20px -4px;
+    }
+    #profile .introBlk .content {
+        height: auto;
+        max-height: 320px;
+        margin: 0 -15px;
+        padding: 0 15px;
+    }
+    .blk .tableBlk {
+        margin: 0 -15px;
+    }
+    .blk .tableBlk .dataTables_filter {
+        margin: 0 15px 10px;
+    }
+    #myTrans .blans {
+        padding: 15px;
+    }
+    #payMthd .inner {
+        padding-right: 0;
+    }
+    #payMthd .inner .ico {
+        width: 44px;
+        min-width: 44px;
+        height: 44px;
+        margin-right: 10px;
+    }
+    #payMthd .inner .editDelBtn {
+        position: static;
+        display: block;
+        text-align: left;
+        margin-top: 5px;
+    }
+}
+
+/*___________________________________
+___________________________________
+        Media Queries Height
+___________________________________*/
+
+@media screen and (max-height:420px) {
+    /*_____ Home _____*/
+    #banner {
+        min-height: 300px;
+    }
+}

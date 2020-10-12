@@ -1,0 +1,158 @@
+.btn:focus,
+.btn.active,
+input:focus,
+input:hover,
+button:focus,
+button.focus,
+button:hover,
+button:active,
+button.active,
+.selectpicker:focus,
+a:focus,
+.btn:active:focus {
+    @include no-outline();
+}
+a,.btn{
+    @include transition(all 0.3s ease 0s);
+    &:hover,&:focus{
+        text-decoration: none;outline: none;box-shadow: none;
+    }
+}
+
+.minh-100{
+ min-height:100% !important;
+}
+
+// font calss
+.font-semi{font-family:$font-semi !important;}
+.font-md{font-family:$font-md !important;}
+.font-reg{font-family:$font-reg !important;}
+
+// color class
+.red-color{color:$red !important;}
+.blue-color{color:$blue !important;}
+.grey-color{color:$dark-grey !important;}
+.black-color{color:$black !important;}
+.green-color{color:$green !important;}
+.yellow-color{color:$yellow !important;} 
+.light-color{color:#DFDFDF !important;}
+
+/*//alert*/
+.alert {
+    border-width: 0 0 0 3px;
+    border-style: solid; 
+    padding: 5px 10px;
+    border-radius: 0px;
+    margin-bottom:0px;
+    text-align:center;
+    font-size: 15px;
+    &.alert-danger {
+        color: #a94442;
+        background-color: #f2dede;
+        border-color: #A94442;
+    }
+    &.alert-success {
+        color: #3c763d;
+        background-color: #dff0d8;
+        border-color: #59935A;
+    }
+    &.alert-info {
+        color: #31708f;
+        background-color: #d9edf7;
+        border-color: #4C8BAA;
+    }
+    &.alert-warning {
+        background-color: #F6F2DD;
+        border-color: #AF9260;
+        color: #8A6D3B;
+    }
+}
+
+
+
+.canvas-border{border:1px solid $black;}    
+
+
+// loader
+.loader {
+    border:4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top:4px solid #3498db;
+    width:30px;
+    height:30px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+//   switch button
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 8px;
+    left: 15px;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:#37B36F;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #37B36F;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

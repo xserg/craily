@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,900&display=swap');
+
+#frmSignup {
+ background-color: #ffffff;
+ margin: 100px auto;
+ font-family: Raleway;
+ padding: 40px;
+ width: 70%;
+ min-width: 300px;
+}
+
+h1 {
+ text-align: center;
+}
+
+input {
+ padding: 10px;
+ width: 100%;
+ font-size: 17px;
+ font-family: Raleway;
+ border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+ background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+ display: none;
+}
+
+button {
+ background-color: #4CAF50;
+ color: #ffffff;
+ border: none;
+ padding: 10px 20px;
+ font-size: 17px;
+ font-family: Raleway;
+ cursor: pointer;
+}
+
+button:hover {
+ opacity: 0.8;
+}
+
+#prevBtn {
+ background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+ height: 15px;
+ width: 15px;
+ margin: 0 2px;
+ background-color: #bbbbbb;
+ border: none;
+ border-radius: 50%;
+ display: inline-block;
+ opacity: 0.5;
+}
+
+.step.active {
+ opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+ background-color: #4CAF50;
+}
+.register_page header.logonHeader .logo {
+    width: 100%;
+    margin-top: 37px;
+    float: left;
+}
+#frmSignup{
+
+}
+.register_page #logOn {
+    background: url(https://crainly.com/assets/images/blackboard-with-math-bg.jpg) !important;
+    padding-top: 150px;
+}
+.register_page #logOn:before{
+	display: none;
+}
+.register_page .ouTer {
+    display: block !important;
+    margin: 0 auto !important;
+    max-width: 456px;
+}
+.register_page .logBlk {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.register_page .logBlk form {
+    position: relative;
+    background: #fff;
+    padding: 55px !important;
+    width: 100% !important;
+    margin: 0px !important;
+ }
+ .register_page .logBlk form h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #123666;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+.register_page .logBlk form input {
+    box-shadow: none;
+    border: 1px solid #123666;
+    border-radius: 0px;
+}
+.register_page .logBlk form label{
+	font-size: 14px !important;
+	color: #123666;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+.register_page .logBlk .webBtn {
+    width: 100%;
+    border-radius: 100px;
+    padding: 20px 0px !important;
+    height: auto !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    background: #F5610B !important;
+    box-shadow: 0px 0px 3px 0px #F5610B;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.register_page .haveAccount.text-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.register_page .haveAccount.text-center span {
+    font-size: 16px;
+    color: #123666;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.register_page .haveAccount.text-center a {
+    font-size: 14px;
+    color: #123666 !important;
+    font-weight: 700 !important;
+    border: 3px solid #123666;
+    padding: 7px 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.register_page .rememberMe {
+    margin-top: 20px !important;
+    text-align: left;
+    margin-bottom: 0px !important;
+}
+.register_page .rememberMe .lblBtn {
+    text-align: left !important;
+}
+.register_page .rememberMe .lblBtn label{
+	color:#123666;
+	font-size: 12px !important;
+	font-family: 'Montserrat', sans-serif !important;
+}
+.register_page .rememberMe .lblBtn label a{
+	color:#123666;
+	font-size: 12px !important;
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: bold !important;
+}
+
+
+.register_tutor_page .ouTer {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.register_tutor_page .logBlk {
+    max-width: 100%;
+    float: right;
+    width: 50%;
+}
+.register_tutor_page .logBlk form#frmSignup {
+    width: 100%;
+    margin: 0px;
+}
+.register_tutor_page div#accordionExample .card {
+    margin-bottom: 10px;
+}
+.register_tutor_page .card-body label.checkbox-inline {
+    width: 22%;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    padding-left: 40px;
+}
+.register_tutor_page .card-body label.checkbox-inline inout{
+	    margin-left: -28px !important;
+}
+.register_tutor_page #logOn {
+    background: url(https://crainly.com/assets/images/mia.jpg) !important;
+    padding-top: 150px;
+}
+.register_tutor_page #logOn:before {
+  display: none;
+}
+.register_tutor_page header.logonHeader .logo {
+    width: 100%;
+    margin-top: 37px;
+    float: left;
+}
+
+
+.register_tutor_page .logBlk form input {
+    box-shadow: none;
+    border: 1px solid #123666;
+    border-radius: 0px;
+}
+.register_tutor_page .logBlk form label{
+	font-size: 14px !important;
+	color: #123666;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.register_tutor_page .logBlk .webBtn {
+    width: 100%;
+    border-radius: 100px;
+    padding: 20px 0px !important;
+    height: auto !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    background: #F5610B !important;
+    box-shadow: 0px 0px 3px 0px #F5610B;
+    font-family: 'Montserrat', sans-serif;
+}
+.register_tutor_page .logBlk form h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #123666;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.register_tutor_page #logOn .ouTer .lSide h1 {
+    color: #123666;
+    font-size: 33px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.register_tutor_page  #logOn .ouTer .lSide p{
+	color: #123666;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+.register_tutor_page  #logOn .ouTer .lSide h3{
+	color: #123666;
+}
+.register_tutor_page  #logOn .ouTer .lSide h1:before{
+   content: "";
+   position: absolute;
+   width: 10%;
+   height: 3px;
+   background:#F5610B;
+   bottom: 0;
+}
+.register_tutor_page .lSide.ckEditor {
+    float: left;
+    width: 47% !important;
+    max-width: 100% !important;
+}
+.register_tutor_page .logBlk form {
+    position: relative;
+    background: #fff;
+    padding: 55px !important;
+    width: 100% !important;
+    margin: 0px !important;
+ }
+
+.lblBtn label {
+    padding-left: 0px;
+}

@@ -1,0 +1,104 @@
+.main-header{
+	.navbar{
+		background-color:$black;padding:18px 30px; 
+	   .navbar-brand{
+	   	padding-left: 10px;
+	   	.mobile-logo{
+	   		display:none;
+	   	}
+	   }
+	
+	.timer{
+		padding:18px 22px;background:rgba($dark-grey, 0.45);color:$white;border-radius:5px;
+		font-size:20px;   
+	}
+	.btn-danger{
+    padding:17px 18px;
+	}
+	.navbar-toggler{
+		background-color:$red;padding:5px 12px;margin-left:10px; 
+		.line{
+			width:20px;height:1px;background:$white;
+			display:block;
+			&:not(:last-child){
+				margin-bottom:5px;
+			}
+		}
+	}
+}
+@media (min-width:1600px)and(max-width:1680px){
+	.navbar{padding:10px 30px;}
+}
+
+
+@media (max-width:1440px){
+.navbar{
+	padding:5px 30px;
+	.navbar-brand{
+		img{
+			max-width:145px;
+		}
+	}
+	.timer{
+		padding:11px 18px;font-size:18px;
+	}
+	.btn-danger{
+    padding:10px 14px;font-size:18px;
+	}
+}
+}
+@include media-breakpoint-down(lg){
+	.navbar{
+		padding:12px 15px;
+	}
+}
+@include media-breakpoint-down(md){
+	.navbar{
+	.navbar-brand{
+		padding-left:0px;
+		img{
+			max-width:140px;
+		}
+	}
+	.timer{
+		font-size:14px;
+	}	
+	.btn-danger{
+		font-size:14px;
+	}
+	}
+}
+@include media-breakpoint-down(xs){
+	.navbar{
+		padding:8px 15px;
+	.timer{
+		padding:8px 13px;
+	}	
+	.btn-danger{
+		padding:8px 10px;
+	}
+	}
+}
+@media (max-width:480px){ 
+	.navbar{
+		 .navbar-brand{
+	   	.mobile-logo{
+	   		display:block;max-width:35px;
+	   	}
+	   	.desktop-logo{
+	   		display:none;
+	   	}
+	   }
+	.timer{
+		padding:8px 5px;font-size: 12px;text-align: center;min-width: 120px;
+	}	
+	.btn-danger{
+		padding:7px 5px;font-size:12px;
+	}
+	.navbar-toggler{
+		padding: 4px 5px;margin-left: 5px;
+	}
+	
+	}
+}
+}   

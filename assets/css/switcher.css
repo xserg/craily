@@ -1,0 +1,98 @@
+/*! =========================================================
+                  Switcher Toggle Button Css
+                Asad Rehan Front-End-Developer
+========================================================= */
+
+.switchBtn {
+    position: relative;
+    width: 32px;
+    min-width: 32px;
+    height: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.switchBtn * {
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+
+.switchBtn input[type="checkbox"] {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    z-index: 5;
+}
+
+.switchBtn input[type="checkbox"]:before,
+.switchBtn input[type="checkbox"]:after {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    margin: 0 !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    transform: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.switchBtn input[type="checkbox"]:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    top: 3px !important;
+    left: 3px !important;
+    bottom: 2px !important;
+    background: #fff !important;
+    border: 0 !important;
+    border-radius: 75%;
+    transition: all linear 0.3s;
+    z-index: 5;
+}
+
+.switchBtn input[type="checkbox"]:checked:before {
+    border: 0 !important;
+    left: 17px !important;
+}
+
+.switchBtn input[type="checkbox"]:after {
+    content: '';
+    font-family: sans-serif !important;
+    font-size: 11px;
+    line-height: 1;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    color: #333;
+    white-space: pre;
+    padding-top: 0 !important;
+    background: #999 !important;
+    border: 0 !important;
+    border-radius: 50px;
+    transition: none !important;
+}
+
+.switchBtn input[type="checkbox"]:checked:after {
+    background: -webkit-linear-gradient(left, #3095e1, #3eaab1) !important;
+    background: -o-linear-gradient(left, #3095e1, #3eaab1) !important;
+    background: linear-gradient(to right, #3095e1, #3eaab1) !important;
+}

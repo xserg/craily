@@ -1,0 +1,1 @@
+ALTER TABLE `tbl_members` ADD `highest_level_of_education` INT NOT NULL DEFAULT '0' AFTER `mem_onlinelesson`;
