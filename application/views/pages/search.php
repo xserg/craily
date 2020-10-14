@@ -449,8 +449,8 @@
             }
             $('#lstPaging').hide();
             setTimeout(function () {
-                if (itemsList && itemsList.length > 0) {
-                    $('#srchDta2').html('');
+              $('#srchDta2').html('');
+                if (itemsList && itemsList.length > 0) {                
                     $.each(itemsList, function (index, obj) {
                         if (loop_start <= index && index < total_show) {
 //                             if(index < 3)

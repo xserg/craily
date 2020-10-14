@@ -191,7 +191,7 @@ class Member_model extends CRUD_Model {
         }
         if (isset($post['education']) && $post['education']!="all")
         {
-            $this->db->where('mem.highest_level_of_education <=' , $post['education']);
+            $this->db->where('mem.highest_level_of_education >=' , $post['education']);
         }
         
         if (!empty($post['zip']))
@@ -437,4 +437,3 @@ class Member_model extends CRUD_Model {
     }
 }
 ?>
-

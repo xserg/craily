@@ -300,11 +300,11 @@
                 </div>
                 <div class="form-group custom-select">
                   <label for="gender">Gender</label>
-                  <select class="form-control select2-dropdown" id="gender">
+                  <select class="form-control select2-dropdown" id="gender" name="gender">
                     <option disabled selected>Select</option>
                     <option>Male</option>
                     <option>Female</option>
-                    <option>Prefer not to say</option>
+                    <option value="other">Prefer not to say</option>
                   </select>
                 </div>
                 <div class="form-group">

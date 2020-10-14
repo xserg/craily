@@ -519,7 +519,7 @@
     }
 
     $(function(){
-        $(".div-readmore").readmore({collapsedHeight: 80,speed: 500});
+        $(".div-readmore").readmore({collapsedHeight: 70,speed: 500});
         h = $('#profile .col1 .content').height();
         // $('#profile .col2 .content').height(h);
 

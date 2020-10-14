@@ -596,7 +596,6 @@ class Index extends MY_Controller
 
 			$post = html_escape($this->input->post());
 			$subjects = [];
-
 			foreach($subject as $key => $value) {
 				$sub_subjects = null;
 				$loop = 0;
@@ -663,6 +662,10 @@ class Index extends MY_Controller
 					$arr = array('mem_subjects' => $subjects/*, 'mem_education' => $Education*/, 'mem_type' => 'tutor', 'mem_status' => 0, 'mem_hear_about' => $post['hear_about'], 'mem_last_login' => date('Y-m-d h:i:s'), 'mem_hourly_rate' => $post['hourly_rate'], 'mem_address1' => $post['address'], 'mem_address2' => $post['address2'], 'mem_travel_radius' => $post['travel_radius'], 'mem_cancel_policy' => $post['selectCancelPolicy'], 'mem_profile_heading' => $post['profile_headline'], 'mem_image' => $data['mem_image'], 'mem_bio' => $post['bio'], 'mem_about' => $post['bio'], 'mem_street' => $post['street'], 'mem_city' => $post['city'], 'mem_state_id' => $post['state'], 'mem_zip' => $post['zip'], 'mem_graduation_year' => $post['grad_year'], 'mem_major_subject' => $post['major'], 'mem_school_name' => $post['college'], 'mem_map_lat' => $post['txtLatitude'], 'mem_map_lng' => $post['txtLongitude'], 'mem_onlinelesson' => $post['onlinelesson'],'highest_level_of_education' => $post['highest_level_of_education']);
 				$arr['mem_school_name'] = '';
 				$arr['is_profile_complete'] = 1;
+				$arr['mem_sex'] = strtolower($post['gender']);
+				if (!$arr['mem_travel_radius']) {
+						$arr['mem_travel_radius'] = null;
+				} 
 				$mem_id = $this->member_model->save($arr, 'mem_id', $mem_row);
 				if ( $mem_id != '' && $mem_id != 0 ) {
 					// Insert Education
